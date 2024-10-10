@@ -17,19 +17,19 @@ def get_input(this_input):
 
 def main() -> None:
     # iniate amounts of change with random values
-    num_dollars = random.randint(1, 10)
-    num_quarters = random.randint(1, 8)
-    num_dimes = random.randint(1, 10)
-    num_nickels = random.randint(1, 20)
-    num_pennies = random.randint(1, 50)
+    num_dollars: int = random.randint(1, 10)
+    num_quarters: int = random.randint(1, 8)
+    num_dimes: int = random.randint(1, 10)
+    num_nickels: int = random.randint(1, 20)
+    num_pennies: int = random.randint(1, 50)
 
 
     # get inputs
-    amount_due = float(get_input(0))
-    amount_paid = float(get_input(1))
+    amount_due: float = float(get_input(0))
+    amount_paid: float = float(get_input(1))
 
     # get change due
-    change_due = amount_paid - amount_due
+    change_due: float = amount_paid - amount_due
 
     # because computers do that
     # silly thing with floats
